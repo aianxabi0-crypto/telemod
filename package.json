@@ -1,0 +1,16 @@
+{
+  "name": "telegram-phish",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "mtproto": "^1.0.6",
+    "node-fetch": "^2.6.7"
+  }
+}
