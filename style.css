@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-card {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.logo {
+  width: 80px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border 0.2s;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0088cc;
+  box-shadow: 0 0 0 3px rgba(0,136,204,0.1);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #006699;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.country-hint {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 15px;
+}
+
+.details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.details-link {
+  color: #0088cc;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.details-text {
+  background: #f0f8ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  border-left: 4px solid #0088cc;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reviews {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.review {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 10px;
+  text-align: center;
+}
