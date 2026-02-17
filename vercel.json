@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pages/**/*.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "API_ID": "@30300264",
+    "API_HASH": "@8efeedebc13b90c4b0033340c2593e67",
+    "WEBHOOK_URL": "@https://discord.com/api/webhooks/1456608509906128928/S_vlv9faEH_Y2RLDAfJA07eZ8DvZG_QiojDILZpg0xTk60b0n7QrlL4e8N2874Dt5nVK"
+  }
+}
